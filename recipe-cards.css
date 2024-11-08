@@ -1,0 +1,65 @@
+/* Add this to your styles.css or create a new file recipe-cards.css */
+
+.recipe-actions {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+}
+
+.recipe-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #2980b9;
+    text-decoration: none;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Icons for buttons */
+.recipe-btn i {
+    margin-right: 5px;
+}
+
+/* Card hover effect */
+.recipe-card {
+    position: relative;
+}
+
+.recipe-card .recipe-actions {
+    margin-top: auto;
+    border-top: 1px solid #eee;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .recipe-actions {
+        flex-direction: column;
+    }
+    
+    .recipe-btn {
+        width: 100%;
+    }
+}
